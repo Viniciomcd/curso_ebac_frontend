@@ -1,0 +1,41 @@
+* {
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin-top: 250px;
+    background: #d6d6d6;
+    
+}
+
+.conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conteiner ul li {
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 30px;
+}
+
+form{
+    color: #d6d6d6;
+}
+
+input, button {
+    padding: 25px;
+}
+
+button {
+    cursor: pointer;
+    background: #3b3b3b;
+    color: white;
+    font-weight: bolder;
+    border: none;
+}
