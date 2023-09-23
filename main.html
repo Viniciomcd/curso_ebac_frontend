@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form label {
+    display: block;
+    font-weight: bolder;
+    padding: 2px;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background: #0a7941;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 18px;
+}
+    </style>
+</head>
+<body>
+    <h1>Entre em contato</h1>
+    <section>
+        <div class="container">
+            <form>
+                <div class="form">
+                    <label for="nome" placeholder="">Nome</label>
+                    <input type="text" id="nome">
+                </div>
+                <div class="form">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone">
+                </div>
+                <div class="form">
+                    <label for="cpf">CPF</label>
+                    <input type="number" id="cpf">
+                </div>
+                <div class="form">
+                    <label for="endereço">Endereço Completo</label>
+                    <input type="text" id="endereço">
+                </div>
+                <div class="form">
+                    <label for="CEP">CEP</label>
+                    <input type="number" id="CEP">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./Js/jquery.mask.js"></script>
+    <script >
+                    $('#telefone').mask('(00) 00000-0000', {placeholder:"(__) _____-____"});
+                    $('#cpf').mask('000.000 000-00', {placeholder:'___.___.___-__'});
+                    $('#CEP').mask('00000-000', {placeholder:'_____-___'});
+    </script>
+</body>
+</html>
